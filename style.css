@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Teko:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppies', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.login-wrapper{
+    position: relative;
+    width: 22em;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px double white;
+    border-radius: 1em;
+    background-color: transparent;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 17em;
+    margin: 1.5em 0;
+    border-bottom: 2px solid white;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: .2em;
+    transform: translateY(-50%);
+    font-size: .9em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -4px;
+    left: 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 2.2em;
+    font-size: 1em;
+    color: white;
+    padding-right: 2.5em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: .5em;
+    color: white;
+    font-size: 1.2em;
+    line-height: 2.2em;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px;
+    font-size: .9em;
+    color: white;
+}
+
+.remember-forgot label input{
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover,
+.register p a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+.register{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
